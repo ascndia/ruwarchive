@@ -1,10 +1,13 @@
 ---
+import { getImage } from "astro:assets";
+
 import Bg from "../assets/bg.png";
+const OptBg = await getImage({ src: Bg });
 ---
 
 <div
   id="feature2"
-  style=`height: fit-content;background-image: url(${Bg.src});`
+  style=`height: fit-content;background-image: url(${OptBg.src});`
   class="section
   text-white
   w-100"

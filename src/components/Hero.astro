@@ -1,8 +1,10 @@
 ---
+import { getImage } from "astro:assets";
 import Image from "../assets/image.png";
+const OptImage = await getImage({ src: Image });
 ---
 
-<div class="mask" style=`background-image: url(${Image.src});`>
+<div class="mask" style=`background-image: url(${OptImage.src});`>
   <div
     id="home"
     class="h-100 w-100"
