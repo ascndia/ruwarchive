@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+import App from "../assets/app.png";
+---
+
+<div
+  id="feature"
+  style="height: fit-content; min-height: 100vh;"
+  class="pattern"
+>
+  <div
+    style="height: 100vh"
+    class="container mx-auto row d-flex justify-content-center align-items-center"
+  >
+    <div class="col-md-6 text-center text-lg-start mt-5 mt-lg-0">
+      <h2 class="fw-bold fs-1">
+        Baca buku kapanpun<br />dan dimanapun dengan <br />Applikasi mobile
+      </h2>
+      <button
+        class="btn btn-lg fw-bold mt-3"
+        style="background-color: rgb(255, 255, 64);"
+      >
+        Unduh aplikasi sekarang
+      </button>
+    </div>
+    <div class="col-md-6 text-center">
+      <Image class="w-75 w-lg-100" height={250} src={App} alt=" " />
+    </div>
+  </div>
+</div>
+<style>
+  .pattern {
+    background-color: #e5e5f7;
+    background-image: linear-gradient(#bababa53 0.9px, transparent 0.9px),
+      linear-gradient(to right, #bababa3c 0.9px, #e5e5f74e 0.9px);
+    background-size: 18px 18px;
+  }
+</style>

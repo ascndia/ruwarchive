@@ -1,0 +1,46 @@
+---
+import Image from "../assets/image.png";
+---
+
+<div class="mask" style=`background-image: url(${Image.src});`>
+  <div
+    id="home"
+    class="h-100 w-100"
+    style="background-color: rgba(0, 0, 0, 0.8);"
+  >
+    <div
+      class="container h-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="text-white text-center">
+        <h1 style="font-size: 60px;">Temukan Dunia Buku</h1>
+        <p class="fs-5">
+          Jelajahi ribuan judul, dari klasik hingga bestseller modern.
+        </p>
+        <p class="fs-4">
+          Bergabung dengan
+          <span class="fw-bold" style="color: rgb(255, 255, 64)"
+            >RUW<span style="color: white;">ARCHIVE</span></span
+          > Hari Ini
+        </p>
+        <div
+          class="text-white flex-column justify-content-center flex-lg-row d-flex gap-2"
+        >
+          <button class="btn btn-secondary fw-semibold fs-5">
+            Mulai Membaca Sekarang
+          </button>
+          <button
+            style="background: rgb(255, 255, 64);"
+            class="btn text-black fw-semibold fs-5">Unduh di Appstore</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .mask {
+    height: 100vh;
+    background-blend-mode: darken;
+  }
+</style>

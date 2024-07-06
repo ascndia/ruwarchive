@@ -1,0 +1,23 @@
+---
+import Layout from "../layout/layout.astro";
+import Feature from "../components/Feature.astro";
+import Feature2 from "../components/Feature2.astro";
+import Hero from "../components/Hero.astro";
+import Pricing from "../components/Pricing.astro";
+import Footer from "../layout/Footer.astro";
+---
+
+<Layout title="Read Books">
+  <Hero />
+  <Feature />
+  <Feature2 />
+  <Pricing />
+  <Footer />
+</Layout>
+<style>
+  #book {
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/image.png");
+  }
+</style>
